@@ -29,4 +29,13 @@ flowchart LR
     AuthMicroservice -->FilesPermissionTrackerMicroservice
     FilesPermissionTrackerMicroservice --> ClientApps
     ClientApps --> FilesPermissionTrackerMicroservice
+
+
+
+```
+
+Note: Arrows are the direction of data flow not dependency
+```mermaid
+flowchart LR
+    A -->|Data Flow| B
 ```
