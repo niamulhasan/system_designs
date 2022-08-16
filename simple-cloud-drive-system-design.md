@@ -23,10 +23,10 @@ flowchart LR
     CSS --> StorageService
     StorageService --> CSS
     StorageService --> FilesPermissionTrackerMicroservice
-    FilesPermissionTrackerMicroservice --> StorageService
 
     AuthMicroservice --> ClientApps
     ClientApps --> AuthMicroservice
     AuthMicroservice -->FilesPermissionTrackerMicroservice
-    FilesPermissionTrackerMicroservice --> AuthMicroservice
+    FilesPermissionTrackerMicroservice --> ClientApps
+    ClientApps --> FilesPermissionTrackerMicroservice
 ```
